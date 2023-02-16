@@ -7,9 +7,9 @@ pipeline
         {
             steps
             {
-                sh 'g++ pes1ug20cs222.cpp'
+                sh 'g++ hello.cpp'
                 sh '/var/jenkins_home/workspace/pes1ug20cs222-1/main/hello_exec'
-                echo 'Build Stage Successful'
+                echo 'Successful build'
             }
         }
         stage('Test')
@@ -17,14 +17,14 @@ pipeline
             steps
             {   
                 sh './a.ouT'
-                echo 'Output from cpp file'
+                echo 'Output from c++ file is given'
             }
         }
         stage('Deploy')
         {
             steps
             {
-                echo 'Deploying...'
+                echo 'I am Deploying it now.....'
             }
         }
     }
