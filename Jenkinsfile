@@ -8,7 +8,7 @@ pipeline
             steps
             {
                 sh 'g++ hello.cpp'
-                sh '/var/jenkins_home/workspace/PES1UG20CS222-1/main/hello_exec'
+                sh '/var/jenkins_home/workspace/PES1UG20CS222-1/hello_exec'
                 echo 'Successful build'
             }
         }
